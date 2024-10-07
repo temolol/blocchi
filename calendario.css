@@ -1,0 +1,6 @@
+/*diseño horiontal de la pagina de calelndasrio para dar espacio al formulario*/
+body{
+    margin: 5%;
+    font-size: 2svh;
+    align-content: center;
+}
