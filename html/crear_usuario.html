@@ -8,24 +8,23 @@
 </head>
 <body>
     <div>
-        <form action="login.php" method="POST"> <!--method post es para que el formulario pueda ser usado en el php-->
+        <form action="../php/crear_usuario.php" method="POST"> <!--method post es para que el formulario pueda ser usado en el php-->
             <P align="center">
                 <font face="A Mano">
                     "crear usuario"<br>
                     <label>Todos los campos marcados con asterisco son obligatorios</label><br>
                     <label for="nombre">Nombre:*</label><br>
-                    <input type="text" name="nombre" class="form-control" placebolder="Nombre"  style="width: 200px; height: 30px;"><br>
+                    <input type="text" name="nombre" class="form-control" placeholder="Nombre"  style="width: 200px; height: 30px;" required><br>
                     <label for="apellido">Npellido:*</label>
-                    <input type="text" name="apellido" class="form-control" placebolder="Apellido"  style="width: 200px; height: 30px;"><br>
+                    <input type="text" name="apellido" class="form-control" placeholder="Apellido"  style="width: 200px; height: 30px;" required=><br>
                     <label for="correo">Correo electronico:*</label>
-                    <input type="email" name="correo" class="form-control" placebolder="ejemplo@email.com"  style="width: 200px; height: 30px;"><br>
+                    <input type="email" name="correo" class="form-control" placeholder="ejemplo@email.com"  style="width: 200px; height: 30px;" required><br>
                     <label for="Contraseña">Contraseña:*</label><br>
-                    <input type="password" name="contrasena" class="form-control"  style="width: 200px; height: 30px;"><br>  
-                    <input type="button" value="Enviar"><br>
+                    <input type="password" name="contrasena" class="form-control"  style="width: 200px; height: 30px;" required><br> 
+                    <input type="submit" value="Enviar" class="btn btn-primary"><br>
                 </font>
             </P>
         </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
