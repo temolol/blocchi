@@ -8,19 +8,19 @@
 </head>
 <body>
     <div>
-        <form action="crear_usuario" method="POST">
+        <form action="conexion.php" method="POST"> <!--method post es para que el formulario pueda ser usado en el php-->
             <P align="center">
                 <font face="A Mano">
                     "crear usuario"<br>
                     <label>Todos los campos marcados con asterisco son obligatorios</label><br>
                     <label for="nombre">Nombre:*</label><br>
-                    <input type="text" name="Nombre" class="form-control" placebolder="nombre"  style="width: 200px; height: 30px;"><br>
+                    <input type="text" name="nombre" class="form-control" placebolder="Nombre"  style="width: 200px; height: 30px;"><br>
                     <label for="apellido">Npellido:*</label>
-                    <input type="text" name="Apellido" class="form-control" placebolder="apellido"  style="width: 200px; height: 30px;"><br>
+                    <input type="text" name="apellido" class="form-control" placebolder="Apellido"  style="width: 200px; height: 30px;"><br>
                     <label for="correo">Correo electronico:*</label>
-                    <input type="email" name="Correo" class="form-control" placebolder="ejemplo@email.com"  style="width: 200px; height: 30px;"><br>
+                    <input type="email" name="correo" class="form-control" placebolder="ejemplo@email.com"  style="width: 200px; height: 30px;"><br>
                     <label for="Contraseña">Contraseña:*</label><br>
-                    <input type="password" class="form-control" placebolder="Contraseña"  style="width: 200px; height: 30px;"><br>  
+                    <input type="password" name="contrasena" class="form-control"  style="width: 200px; height: 30px;"><br>  
                     <input type="button" value="Enviar"><br>
                 </font>
             </P>
