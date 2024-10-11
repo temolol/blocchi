@@ -18,7 +18,7 @@ $resultado = $conn->query($sql);
 $fila = $resultado->fetch_row();
 // Verificar si existe el correo
 if ($fila[0] == 1) {
-    echo "El correo ya existe en la base de datos.";
+    echo "ya existe un usuario con ese correo electronico";
 } else {
     $stmt = $conn->prepare("CALL insertar_usuario(?, ?, ?, ?)");
 
