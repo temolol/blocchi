@@ -20,7 +20,7 @@ $fila = $resultado->fetch_row();
 if ($fila[0] == 1) {
     echo "ya existe un usuario con ese correo electronico";
 } else {
-    $stmt = $conn->prepare("CALL insertar_usuario(?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO usuario(nombre, apellido, email, contraseña) values (?,?,?,?)");
 
     $stmt->bind_param("ssss", $nombre, $apellido, $correo, $contrasena,);
     
