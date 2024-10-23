@@ -1,0 +1,24 @@
+<style>
+    /* Ocultar el iframe por defecto */
+    #iframe-container {
+        display: none;
+    }
+    /* Mostrar el iframe solo cuando el target #mostrarIframe sea activado */
+    #mostrarIframe:target + #iframe-container {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<form action="#mostrarIframe" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <input type="submit" value="Enviar">
+</form>
+
+<!-- Div que contendrá el iframe, inicialmente oculto -->
+<a id="mostrarIframe"></a> <!-- Ancla que sirve para activar el target -->
+<div id="iframe-container">
+    <iframe src="https://www.ejemplo.com" width="600" height="400"></iframe>
+</div>
